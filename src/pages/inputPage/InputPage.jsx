@@ -51,12 +51,16 @@ const InputPage = () => {
   };
 
   return (
-    <div>
-      <Input inputValue={searchTerm} getInputValue={getInputValue} />
-      {characterData.length > 0 ? <CountInfo count={totalCount} /> : null}
-      {characterData.map((character) => (
-        <CharacterCard key={character.id} characterResults={character} />
-      ))}
+    <div className="page">
+      <div className="search-container">
+        <Input inputValue={searchTerm} getInputValue={getInputValue} />
+        {characterData.length > 0 ? <CountInfo count={totalCount} /> : null}
+      </div>
+      <div className="cards-container">
+        {characterData.map((character) => (
+          <CharacterCard key={character.id} characterResults={character} />
+        ))}
+      </div>
     </div>
   );
 };
