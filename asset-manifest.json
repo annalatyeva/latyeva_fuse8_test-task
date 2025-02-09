@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/annalatyeva/latyeva_fuse8_test-task/static/css/main.7a894fdf.css",
-    "main.js": "/annalatyeva/latyeva_fuse8_test-task/static/js/main.5a2c6f2b.js",
-    "static/js/488.ba3c185b.chunk.js": "/annalatyeva/latyeva_fuse8_test-task/static/js/488.ba3c185b.chunk.js",
-    "index.html": "/annalatyeva/latyeva_fuse8_test-task/index.html",
-    "main.7a894fdf.css.map": "/annalatyeva/latyeva_fuse8_test-task/static/css/main.7a894fdf.css.map",
-    "main.5a2c6f2b.js.map": "/annalatyeva/latyeva_fuse8_test-task/static/js/main.5a2c6f2b.js.map",
-    "488.ba3c185b.chunk.js.map": "/annalatyeva/latyeva_fuse8_test-task/static/js/488.ba3c185b.chunk.js.map"
+    "main.css": "/latyeva_fuse8_test-task/static/css/main.7a894fdf.css",
+    "main.js": "/latyeva_fuse8_test-task/static/js/main.64738a24.js",
+    "static/js/488.ba3c185b.chunk.js": "/latyeva_fuse8_test-task/static/js/488.ba3c185b.chunk.js",
+    "index.html": "/latyeva_fuse8_test-task/index.html",
+    "main.7a894fdf.css.map": "/latyeva_fuse8_test-task/static/css/main.7a894fdf.css.map",
+    "main.64738a24.js.map": "/latyeva_fuse8_test-task/static/js/main.64738a24.js.map",
+    "488.ba3c185b.chunk.js.map": "/latyeva_fuse8_test-task/static/js/488.ba3c185b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a894fdf.css",
-    "static/js/main.5a2c6f2b.js"
+    "static/js/main.64738a24.js"
   ]
 }
