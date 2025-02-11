@@ -10,11 +10,13 @@ This project is a character search application that allows users to search for c
 - Automatic API requests trigger when more than three characters are entered.
 - Each character card links to a unique page based on the URL field from the API.
 - Informative message when no results are found.
+![usage-gif](https://github.com/annalatyeva/screenshots/blob/main/usage.gif)
 
 ## Design
 
 The desktop version is implemented based on the design from [Figma](https://www.figma.com/design/OqXrvb70uW6plWJYGW4cvI/Rick-nad-Morti-test?node-id=101-2&p=f&t=zrmVhbhxKpJKZ5IE-0).
 The application supports responsive design from 320px to 1920px, adjusting the number of character cards displayed per row as the screen size changes.
+![design-gif](https://github.com/annalatyeva/screenshots/blob/main/design.gif)
 
 ## Technical Specifications
 
