@@ -51,6 +51,21 @@
   color: var(--blue);
 }
 
+.error-container {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+
+  p {
+    padding: 3px 0px;
+    font-family: var(--fira);
+    color: var(--black);
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
 .count-container {
   max-width: 626px;
   margin: auto;
@@ -72,6 +87,7 @@
 
 .card {
   box-shadow: var(--box-shadow);
+  transition: background-color 0.6s;
 
   h2 {
     font-family: var(--fira);

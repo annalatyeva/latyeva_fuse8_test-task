@@ -2,11 +2,13 @@ import { useState } from 'react';
 import Input from '../../components/input/Input';
 import CountInfo from '../../components/countInfo/CountInfo';
 import CharacterCard from '../../components/characterCard/CharacterCard';
+import ResponseError from '../../components/responseError/ResponseError';
 
 const InputPage = () => {
   const [characterData, setCharacterData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [totalCount, setTotalCount] = useState(0);
+  const [isError, setIsError] = useState(false);
 
   async function getCharacterInfo(inputValue, page = 1) {
     try {
@@ -15,6 +17,7 @@ const InputPage = () => {
       );
 
       if (response.ok) {
+        setIsError(false);
         const json = await response.json();
         setCharacterData((prev) => [...prev, ...json.results]);
 
@@ -27,13 +30,10 @@ const InputPage = () => {
           getCharacterInfo(inputValue, nextPage);
         }
       } else {
-        if (response.status === 404) throw new Error('404, Not found');
-        if (response.status === 500)
-          throw new Error('500, internal server error');
-        if (!response.ok) throw new Error(response.status);
+        throw new Error(response.status);
       }
     } catch (error) {
-      console.error('Fetch', error);
+      setIsError(true);
     }
   }
 
@@ -54,13 +54,16 @@ const InputPage = () => {
     <div className="page">
       <div className="search-container">
         <Input inputValue={searchTerm} getInputValue={getInputValue} />
-        {characterData.length > 0 ? <CountInfo count={totalCount} /> : null}
+        {isError ? <ResponseError /> : null}
+        {characterData.length > 0 && <CountInfo count={totalCount} />}
       </div>
-      <div className="cards-container">
-        {characterData.map((character) => (
-          <CharacterCard key={character.id} characterResults={character} />
-        ))}
-      </div>
+      {characterData.length > 0 && (
+        <div className="cards-container">
+          {characterData.map((character) => (
+            <CharacterCard key={character.id} characterResults={character} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
