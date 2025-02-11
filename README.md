@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Rick and Morty Character Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This project is a character search application that allows users to search for characters by their names and surnames using a provided API. Users can enter a character's name in the search box and see all matching results displayed on the page as character cards.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- Focused input field for immediate user interaction.
+- Automatic API requests trigger when more than three characters are entered.
+- Each character card links to a unique page based on the URL field from the API.
+- Informative message when no results are found
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The desktop version is implemented based on the design from [Figma](https://www.figma.com/design/OqXrvb70uW6plWJYGW4cvI/Rick-nad-Morti-test?node-id=101-2&p=f&t=zrmVhbhxKpJKZ5IE-0).
+The application supports responsive design from 320px to 1920px, adjusting the number of character cards displayed per row as the screen size changes.
 
-### `npm test`
+## Technical Specifications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Support for the latest version of Chrome.
+- Developed using React.
+- Code is formatted using ESLint, eslint-config-prettier, and eslint-config-airbnb.
 
-### `npm run build`
+## API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application interacts with an external API to fetch character data. You can find the [API documentation here](https://rickandmortyapi.com/documentation/#rest).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation and Running
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone <your repository link>
+cd <directory name>
+npm install
+npm start
+```
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The completed code is hosted on GitHub, and you can access it through the following links:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Repository](https://github.com/annalatyeva/latyeva_fuse8_test-task)
+- [Live Site on GitHub Pages](https://annalatyeva.github.io/latyeva_fuse8_test-task/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ## Future Improvements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  When I was working on the project, I came up with several ideas for further development and improvement of this project, including:
 
-## Learn More
+- More detailed character cards with their location and image of the character.
+- Implementation of search and filtering characters based on attributes other than names, to improve user experience.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Conclusion
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application is designed to provide users with a simple and effective tool for finding characters from their favorite show. I hope you enjoy using it and can easily discover your beloved characters!
 
-### Code Splitting
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I would love to hear your feedback and suggestions! You can reach me at:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: *anysha_s@mail.ru*
+- Telegram: _@anysha_s_
