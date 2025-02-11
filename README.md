@@ -9,7 +9,7 @@ This project is a character search application that allows users to search for c
 - Focused input field for immediate user interaction.
 - Automatic API requests trigger when more than three characters are entered.
 - Each character card links to a unique page based on the URL field from the API.
-- Informative message when no results are found
+- Informative message when no results are found.
 
 ## Design
 
@@ -29,8 +29,8 @@ The application interacts with an external API to fetch character data. You can 
 ## Installation and Running
 
 ```
-git clone <your repository link>
-cd <directory name>
+git clone https://github.com/annalatyeva/latyeva_fuse8_test-task
+cd latyeva_fuse8_test-task
 npm install
 npm start
 ```
@@ -42,9 +42,9 @@ The completed code is hosted on GitHub, and you can access it through the follow
 - [Repository](https://github.com/annalatyeva/latyeva_fuse8_test-task)
 - [Live Site on GitHub Pages](https://annalatyeva.github.io/latyeva_fuse8_test-task/)
 
-  ## Future Improvements
+## Future Improvements
 
-  When I was working on the project, I came up with several ideas for further development and improvement of this project, including:
+When I was working on the project, I came up with several ideas for further development and improvement of this project, including:
 
 - More detailed character cards with their location and image of the character.
 - Implementation of search and filtering characters based on attributes other than names, to improve user experience.
@@ -57,5 +57,5 @@ This application is designed to provide users with a simple and effective tool f
 
 I would love to hear your feedback and suggestions! You can reach me at:
 
-- Email: *anysha_s@mail.ru*
-- Telegram: _@anysha_s_
+- Email: **anysha_s@mail.ru**
+- Telegram: **@anysha_s**
